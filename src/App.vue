@@ -6,7 +6,7 @@ import { RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="100" height="100" />
+    <img alt="Phoenix Logo" class="logo" src="@/assets/logo.png" width="200" height="200" />
 
   </header>
   <Suspense>

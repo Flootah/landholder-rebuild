@@ -37,11 +37,11 @@
     @submit="onSubmit()"
   />
   <div class="buttonwrap">
-  <button class="btn btn-outline-dark" type="button" @click="$router.push('/login')">
+  <button class="btn btn-outline-dark p-3 hover:bg-slate-600" type="button" @click="$router.push('/login')">
       Back
     </button>
     |
-    <button class="btn btn-outline-dark" type="button" @click="onSubmit()">
+    <button class="btn btn-outline-dark p-3 hover:bg-slate-600" type="button" @click="onSubmit()">
       Signup
     </button>
     <br>

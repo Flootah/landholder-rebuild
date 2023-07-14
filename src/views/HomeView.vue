@@ -66,9 +66,9 @@ await loadData()
   <main class="flex flex-col items-center">
     <h1 class="text-5xl font-bold mb-5">Database Contents</h1>
     <h2 class="text-3xl fond-bold mb-5">Owners</h2>
-      <table ref="otable" class="bg-slate-800 border-2 table-auto w-5/6 border-collapsed text-center text-s">
+      <table ref="otable" class="bg-slate-800 border-slate-400 border-2 table-auto w-5/6 border-collapsed text-center text-s">
         <thead>
-          <tr>
+          <tr class="even:bg-slate-800 odd:bg-slate-900">
             <th>Name</th>
             <th>Type</th>
             <th>Entity</th>
@@ -77,7 +77,7 @@ await loadData()
             <th colspan="2">Actions</th>
           </tr>
         </thead>
-        <tr v-for="(owner, i) in owners" :key="i">
+        <tr class="even:bg-slate-800 odd:bg-slate-900" v-for="(owner, i) in owners" :key="i">
           <td>{{ owner.name }}</td>
           <td>{{ owner.ownerType }}</td>
           <td>{{ owner.entityType }}</td>
@@ -103,9 +103,9 @@ await loadData()
       </button>
     <h2 class="text-3xl fond-bold mb-5">Land Holdings</h2>
 
-      <table class="bg-slate-800 border-2 table-fit w-5/6 border-collapsed text-center text-s" ref="lhtable">
+      <table class="bg-slate-800 border-slate-400 border-2 table-fit w-5/6 border-collapsed text-center text-s" ref="lhtable">
         <thead>
-          <tr>
+          <tr class="even:bg-slate-800 odd:bg-slate-900">
             <th width ="190px">Name</th>
             <th>Owner</th>
             <th>Entity</th>
@@ -119,7 +119,7 @@ await loadData()
             <th colspan="2" width="50px">Actions</th>
           </tr>
         </thead>
-        <tr v-for="(lh, i) in landholdings" :key="i">
+        <tr class="even:bg-slate-800 odd:bg-slate-900" v-for="(lh, i) in landholdings" :key="i">
           <td>{{ lh.name }}</td>
           <td>{{ lh.owner }}</td>
           <td>{{ lh.legalEntity }}</td>
@@ -152,11 +152,11 @@ await loadData()
 
 <style>
 table {
-  min-width: 1200px
+  min-width: 1200px;
 }
 
 table, tr, th, td {
-  border: 2px white solid;
+  border: 0 solid;
   text-align: center;
   padding: 5px;
 }

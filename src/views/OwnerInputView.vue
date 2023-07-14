@@ -122,8 +122,8 @@
       </div>
     </form>
     <div class="content-center text-center mb-6">
-      <button class="p-5 m-4" @click="$router.push('/')">Cancel</button>
-      <button class="p-5 m-4" @click="submit()">Confirm</button>
+      <button class="p-5 m-4 hover:bg-slate-600" @click="$router.push('/')">Cancel</button>
+      <button class="p-5 m-4 hover:bg-slate-600" @click="submit()">Confirm</button>
     </div>
     <p class="text-red-500 text-center text-lg">{{ error }}</p>
   </div>

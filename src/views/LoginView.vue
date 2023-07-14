@@ -36,11 +36,11 @@
   />
 
   <div class="buttonwrap">
-  <button class="btn btn-outline-dark" type="buttom" @click="onSubmit()">
+  <button class="btn btn-outline-dark p-3 hover:bg-slate-600" type="buttom" @click="onSubmit()">
       Login
     </button>
     |
-    <button class="btn btn-outline-dark" type="button" form="inputform" @click="$router.push('/signup')">
+    <button class="btn btn-outline-dark p-3 hover:bg-slate-600" type="button" form="inputform" @click="$router.push('/signup')">
       Signup
     </button>
     <br>
