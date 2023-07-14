@@ -51,7 +51,7 @@ async function deleteLandHolding(id) {
 }
 
 if(!fetchedUser) {
-  await router.push('./login')
+  router.push('/login')
 }
 
 await loadData()

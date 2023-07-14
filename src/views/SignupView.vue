@@ -16,7 +16,7 @@
 
   async function onSubmit() {
     try {
-      console.log("submitting...")
+      //console.log("submitting...")
       // create user and login, route to home
       await realm.createUser(email.value, password.value)
       await realm.loginUser(email.value, password.value)
@@ -37,7 +37,7 @@
     @submit="onSubmit()"
   />
   <div class="buttonwrap">
-  <button class="btn btn-outline-dark" type="button" @click="this.$router.push('/login')">
+  <button class="btn btn-outline-dark" type="button" @click="$router.push('/login')">
       Back
     </button>
     |

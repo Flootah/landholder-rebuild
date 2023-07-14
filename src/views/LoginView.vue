@@ -19,10 +19,10 @@
       console.log("logging in...")
       //realm.loginUser("test@email.com", "123456")
       await realm.loginUser(email.value, password.value)
+      router.push("/")
     } catch ({name, message}) {
       errorlog.value = message;
     }
-    router.push("/")
   }
 </script>
 
@@ -40,7 +40,7 @@
       Login
     </button>
     |
-    <button class="btn btn-outline-dark" type="button" form="inputform" @click="this.$router.push('/signup')">
+    <button class="btn btn-outline-dark" type="button" form="inputform" @click="$router.push('/signup')">
       Signup
     </button>
     <br>
