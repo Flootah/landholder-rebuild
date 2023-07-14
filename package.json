@@ -1,0 +1,23 @@
+{
+  "name": "rebuild",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "pinia": "^2.1.4",
+    "realm": "^11.10.1",
+    "realm-web": "^2.0.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  }
+}
